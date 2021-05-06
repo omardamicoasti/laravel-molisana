@@ -57,6 +57,22 @@ main .singleProduct, main .singleNews {
     align-items: center;
     overflow: hidden;
 }
+.singleNews {
+    background-color: lightgray;
+    text-align: center;
+}
+.singleNews .button {
+    border: 3px solid white;
+    padding: 10px 10px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.singleNews .button:hover {
+    background-color: white;
+    color: black;
+}
+
 
 .relative {
     position: relative;
@@ -84,6 +100,7 @@ main .singleProduct, main .singleNews {
 .singleProduct img{
     width: 220%;
 }
+
 
 
 footer {

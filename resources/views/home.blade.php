@@ -1,6 +1,6 @@
 <style>
     main {
-        height: 150vh;
+        height: 120vh;
     }
 </style>
 

@@ -1,12 +1,9 @@
 
 <style>
     main {
-        height: 340vh;
+        height: 140vh;
         display: flex;
         flex-wrap:wrap;
-    }
-    .singleNews {
-        text-align: center
     }
 </style> 
  
@@ -20,37 +17,37 @@
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>
+        <div class="button">read more</div>
     </div>
     <div class="singleNews">
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>       
+        <div class="button">read more</div>
     </div>
     <div class="singleNews">
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>
+        <div class="button">read more</div>
     </div>
     <div class="singleNews">
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>
+        <div class="button">read more</div>
     </div>
     <div class="singleNews">
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>       
+        <div class="button">read more</div>
     </div>
     <div class="singleNews">
         <p>data</p>
         <p>____</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque</p>
-        <p>button read more</p>
+        <div class="button">read more</div>
     </div> 
 @endsection
 

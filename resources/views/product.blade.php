@@ -1,6 +1,6 @@
 <style>
     main {
-        height: 340vh;
+        height: 300vh;
         display: flex;
         flex-wrap:wrap;
     }
@@ -21,9 +21,7 @@
                 <div class="layover">{{ $pasta["titolo"] }}</div>
             </div>
         @endforeach
-    </div>
-        
-        
+    </div>      
     
 @endsection
 
