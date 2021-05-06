@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(0, 6, 39);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    border: 1px solid black;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > ul {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+main {
+    height: 120vh;
+}
+main > img {
+    width: 100%;
+}
+
+footer {
+    height: 10vh;
+}
+footer img {
+    width: 100%;
+}
