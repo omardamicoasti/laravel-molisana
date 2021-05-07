@@ -8,6 +8,7 @@
 }
 li {
     list-style: none;
+    cursor: pointer;
 }
 a {
     text-decoration: none;
@@ -17,7 +18,10 @@ a {
 	display: table;
 	clear: both;
 }
-
+.active {
+    background-color: lightblue;
+    padding: 5px 5px;
+}
 header {
     height: 25vh;
     display: flex;
@@ -31,21 +35,17 @@ header > ul {
     justify-content: space-between;
     text-transform: capitalize;
 }
-header ul li {
-    padding: 5px 5px;
-    cursor: pointer;
-}
-header ul li:hover {
-    background-color: lightblue;
-}
 main > img {
     width: 100%;
 }
-.productContainer {
-    width: 100%;
-    height: 100%;
+.productContainer, .newsContainer {
     display: flex;
     flex-wrap: wrap;
+}
+main > h1 {
+    text-transform: capitalize;
+    font-size: 2em;
+    padding: 50px 50px;
 }
 main .singleProduct, main .singleNews {
     border: 3px solid white;
@@ -57,30 +57,13 @@ main .singleProduct, main .singleNews {
     align-items: center;
     overflow: hidden;
 }
-.singleNews {
-    background-color: lightgray;
-    text-align: center;
-}
-.singleNews .button {
-    border: 3px solid white;
-    padding: 10px 10px;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.singleNews .button:hover {
-    background-color: white;
-    color: black;
-}
-
-
 .relative {
     position: relative;
 }
 .singleProduct .layover:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     font-size: 1.5em;
-    transition: 1s;
+    transition: 1s ease-in-out;
     cursor: pointer;
 }
 .singleProduct .layover {
@@ -92,19 +75,41 @@ main .singleProduct, main .singleNews {
     width: 100%;
     height: 100%;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.1);
-    color:  white;
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     padding-top: 95%;
+    transition: 2s;
 }
 .singleProduct img{
     width: 220%;
 }
-
-
+.singleNews {
+    background-color: rgba(58, 62, 65, 0.8);
+    text-align: center;
+}
+.singleNews p, .singleNews .button, .singleProduct .layover {
+    color: white;
+}
+.singleNews .button {
+    border: 3px solid white;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 999;
+}
+.singleNews:hover {
+    background-color: rgba(58, 62, 65, 0.7);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.singleNews .button:hover {
+    background-color: white;
+    color: black;
+}
 
 footer {
     height: 10vh;
+    margin-top: 10vh;
 }
 footer img {
     width: 100%;

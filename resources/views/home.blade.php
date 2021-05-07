@@ -10,5 +10,5 @@
 @section("pageTitle", "Home")
 
 @section("content") 
-            <img src="{{ asset("img/molisana-home.jpg") }}" alt="La Molisana"> 
+    <img src="{{ asset("img/molisana-home.jpg") }}" alt="La Molisana"> 
 @endsection

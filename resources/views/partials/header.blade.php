@@ -3,13 +3,19 @@
     
     <ul>
         <li>
-            <a href="/">home</a>
+            <a href="{{ route("home-page") }}"
+            class="{{ (Request::route()->getName() == 'home-page') ? "active" : '' }}">
+            home</a>
         </li>
         <li>
-            <a href="/product">products</a>
+            <a href="{{ route("product-page") }}"
+            class="{{ (Request::route()->getName() == 'product-page') ? "active" : '' }}">
+            product</a>
         </li>
         <li>
-            <a href="/news">news</a>
+            <a href="{{ route("news-page") }}"
+            class="{{ (Request::route()->getName() == 'news-page') ? "active" : '' }}">
+            news</a>
         </li>
     </ul>
 
